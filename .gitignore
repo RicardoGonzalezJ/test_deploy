@@ -9,8 +9,14 @@ lerna-debug.log*
 
 node_modules
 dist
+scripts-dist
 dist-ssr
 *.local
+
+# Ignore build artifacts
+/package/
+/testDeploy-package.zip
+/scripts/testDeploy.exe
 
 # Editor directories and files
 .vscode/*

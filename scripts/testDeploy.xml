@@ -1,0 +1,13 @@
+<service>
+    <id>testDelpoy</id>
+    <name>testDeploy</name>
+    <description>React/Vite App with Node.js Express server</description>
+    <executable>node</executable>
+    <arguments>scripts-dist/server.js</arguments>
+    <logpath>%BASE%</logpath>
+    <log mode="roll-by-size">
+        <sizeThreshold>10240</sizeThreshold>
+        <keepFiles>8</keepFiles>
+    </log>
+    <onfailure action="restart" delay="5 sec" />
+</service>
