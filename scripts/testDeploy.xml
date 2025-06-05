@@ -1,5 +1,5 @@
 <service>
-    <id>testDelpoy</id>
+    <id>testDeploy</id>
     <name>testDeploy</name>
     <description>React/Vite App with Node.js Express server</description>
     <executable>node</executable>
