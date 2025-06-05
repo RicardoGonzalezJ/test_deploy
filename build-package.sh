@@ -7,6 +7,20 @@ ZIP_NAME="testDeploy-package.zip"
 SCRIPTS_DIR="scripts"
 SERVER_DIST_DIR="scripts-dist"
 FRONTEND_DIST_DIR="dist"
+WINSW_URL="https://github.com/winsw/winsw/releases/latest/download/WinSW-x64.exe"
+WINSW_EXE_NAME="testDeploy.exe"
+WINSW_DEST="$SCRIPTS_DIR/$WINSW_EXE_NAME"
+
+# Ensure scripts dir exists
+mkdir -p "$SCRIPTS_DIR"
+
+# Download WinSW if not already present
+if [ ! -f "$WINSW_DEST" ]; then
+    echo "🌐 Downloading WinSW.exe..."
+    curl -L -o "$WINSW_DEST" "$WINSW_URL"
+    echo "✅ Downloaded WinSW to $WINSW_DEST"
+fi
+echo ""
 
 echo "🔧 Installing dependencies..."
 npm install
