@@ -55,17 +55,26 @@ The goal of this project is to:
 
 ## 📦 How to Build
 
-Run the build script for your platform:
+### First-time Setup (Linux/macOS)
+Make the build script executable:
+```bash
+chmod +x build-package.sh
+```
+
+### Run the build script for your platform
 - **On macOS/Linux:**
     ```bash
-        ./build-package.sh
+    ./build-package.sh
     ```
 - **On Windows (CMD or double-click):**
     ```bash
-        ./build-package.bat
+    ./build-package.bat
     ```
 
-The script will:
+### What the script does
+
+The build script performs the following steps:
+
 - Install dependencies
 - Build the frontend and backend
 - Prune dev dependencies
