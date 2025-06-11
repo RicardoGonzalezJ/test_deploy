@@ -11,6 +11,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "overrides": {
+    "brace-expansion": "4.0.1"
+  },
   "dependencies": {
     "express": "^5.1.0",
     "react": "^19.1.0",
