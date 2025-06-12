@@ -1,6 +1,6 @@
 # Test Deploy
 
-**Test Deploy** is an experimental project for learning and exploring deployment strategies for full-stack JavaScript applications.
+**Test Deploy** is a proof of concept for building and packaging full-stack JavaScript applications into a Windows service using WinSW.
 
 This project does not include a full-featured UI - it simply server a basic Vite-built frontend as part of a complete deployment pipeline simulation
 
@@ -38,7 +38,7 @@ The goal of this project is to:
 
 ## 🚧 Project Status
 
-> This is an **experimental and educational** project. It is not production-ready.
+> This is a **proof of concept** project. It is not production-ready.
 
 ---
 
