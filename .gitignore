@@ -14,6 +14,7 @@ dist-ssr
 *.local
 
 # Ignore build artifacts
+/build-temp/
 /package/
 /testDeploy-package.zip
 /scripts/testDeploy.exe
